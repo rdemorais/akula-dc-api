@@ -9,9 +9,9 @@ O comando acima executa a imagem expondo a porta `3000`
 
 ## Estrutura do arquivo dbconfig.yml
 
-`
+<pre>
 user: [usuário do banco]
 passwd: [senha]
 host: [host do bando]
 db: [nome da base]
-`# akula-dc-api
+</pre>
