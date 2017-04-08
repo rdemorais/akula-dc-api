@@ -1,2 +1,4 @@
 dbconfig.yml
 .gitignore
+README.md
+akula_api_log/*

@@ -10,7 +10,8 @@ RUN apt-get update && \
     cd /opt/akula-rest-apis && \
     ln -s /usr/bin/nodejs /usr/bin/node && \
     npm install && \
+    npm install forever -g && \
     apt-get remove -y git && \
     apt-get clean
 EXPOSE 3000
-ENTRYPOINT ["./opt/akula-rest-apis/bin/www"]
+ENTRYPOINT ["forever -a -l /var/log/akula-api.log /opt/akula-rest-apis/bin/www"]
