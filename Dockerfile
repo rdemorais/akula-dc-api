@@ -14,4 +14,4 @@ RUN apt-get update && \
     apt-get remove -y git && \
     apt-get clean
 EXPOSE 3000
-ENTRYPOINT ["forever -a -l /var/log/akula-api.log /opt/akula-rest-apis/bin/www"]
+CMD ["forever", "-a", "-l /var/log/akula-api.log", "/opt/akula-rest-apis/bin/www"]
